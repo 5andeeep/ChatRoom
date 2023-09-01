@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.app{
+    /* position: fixed; */
+    margin-block: 50px;
+    width: 100%;
+    height: 70%;
+    max-width: 600px;
+    background-color: white;
+    border: 1px solid #eeeeee;
+    
+}
+.app > .screen{
+    display: none;
+}
+.app > .screen.active{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.screen .form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+}
+.screen .form-input{
+    width: 100%;
+    margin: 20px 0px;
+}
+.screen h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #111111;
+    border-bottom: 4px solid #555555;
+    padding: 5px 0px;
+    display: inline-block;
+}
+
+.screen .form-input label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.screen .form-input input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555555;
+    font-size: 16px;
+}
+.screen .form-input button{
+    padding: 10px 20px;
+    background-color: #111111;
+    color: #eeeeee;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease;
+}
+.screen .form-input button:hover{
+    transform: translateY(-5px);
+    box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Now working on chat screen */
+
+.chat-screen .header{
+    background-color: #333333;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+.chat-screen .header .logo{
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+}
+.chat-screen .header button{
+    padding: 5px 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.chat-screen .header button:hover{
+    background-color: black;
+}
+
+.chat-screen .messages{
+    width: 100%;
+    height: 82%;
+    background-color: white;
+    overflow: auto;
+}
+.chat-screen .messages .message{
+    display: flex;
+    padding: 10px;
+}
+.chat-screen .messages .message > div{
+    max-width: 80%;
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07);
+    padding: 10px;
+}
+.chat-screen .messages .message .name{
+    font-size: 13px;
+    color: #e6e6e6;
+    margin-bottom: 5px;
+}
+.chat-screen .messages .message.my-message{
+    justify-content: flex-end;
+}
+.chat-screen .messages .message.my-message > div{
+    border-radius: 0px 15px 15px 15px;
+    background-color: #EF6262;
+    color: white;
+}
+.chat-screen .messages .message.friend-message{
+    justify-content: flex-start;
+}
+.chat-screen .messages .message.friend-message > div{
+    border-radius: 15px 0px 15px 15px;
+    background-color: #5C8374;
+    color: white;
+}
+.chat-screen .messages .message .text{
+    word-wrap: break-word;
+}
+.chat-screen .messages .update{
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+    font-size: 15px;
+}
+.chat-screen .typebox{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    border-top: 1px solid black;
+}
+.chat-screen .typebox input{
+    flex: 1;
+    height: 100%;
+    font-size: 18px;
+    padding-inline: 10px;
+    border: none;
+}
+.chat-screen .typebox button{
+    width: 80px;
+    height: 100%;
+    background-color: #111111;
+    color: #eeeeee;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.chat-screen{
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
